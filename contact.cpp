@@ -28,9 +28,7 @@ void contact::addEntryFn() {
 	std::cout << "       Add entry:" << std::endl;
 	std::cout << "-------------------------" << std::endl << std::endl;
 
-	std::string firstName;
-	std::string lastName;
-	std::string newPhone;
+	std::string firstName, lastName, newPhone;
 	
 	std::cout << "First name: ";
 	std::cin >> firstName;

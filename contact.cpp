@@ -59,10 +59,10 @@ void contact::deleteEntryFn() {
 	}
 	
 
-	// currently will crash if you list a number higher than the last index
+	// will crash if you list a number higher than the last index, need to implement vector.end instead 
 	UINT option;
 	std::cin >> option;
-	if (contactList.size() < option) {
+	if (!contactList[option].empty()) {
 		contactList[option].erase();
 		std::cout << "Successfully removed contact." << std::endl;
 	}
